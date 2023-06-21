@@ -1,7 +1,7 @@
 import axios from 'axios';
 import address from '../env.js';
 
-const API_URL = `${address.API_URL}:${address.PORT}/api/UserNameLoginStudent/`;
+const API_URL = `${address.API_URL}/api/UserNameLoginStudent/`;
 
 
 // const getStudentRequests = async (terms = "", offset = 0, limit = 10, userId = 0) => {

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import address from '../env.js';
 
-const API_URL = `${address.API_URL}:${address.PORT}/api/User/`;
+const API_URL = `${address.API_URL}/api/User/`;
 
 const addOrganization = async (request) => {
 
@@ -65,7 +65,7 @@ const logout = () => {
 
 const resetPassword = (newPass, userId, isAdmin, organizationId) => {
     return axios
-        .post(API_URL + `ResetPassword`, { "userId": userId, "password": newPass, "isAdmin": isAdmin , "organizationId": organizationId})
+        .post(API_URL + `ResetPassword`, { "userId": userId, "password": newPass, "isAdmin": isAdmin, "organizationId": organizationId })
 }
 const forgetPassword = (email) => {
     return axios
@@ -85,13 +85,13 @@ const updateUserInfo = (userId, firstName, lastName, dob, fileName) => {
     }
     return axios.post(API_URL + `UpdateUserInfo`, value);
 }
-const GetLeadTeachers = async (organizationId,lessonId) => {
+const GetLeadTeachers = async (organizationId, lessonId) => {
     return axios.get(API_URL + `GetLeadTeachers?organizationId=${organizationId}&lessonId=${lessonId}`)
 }
 const GetAdditonalParticipants = async (organizationId) => {
     return axios.get(API_URL + `GetAdditonalParticipants?organizationId=${organizationId}`)
 }
-const GetParticipents= async (organizationId,lessonId) => {
+const GetParticipents = async (organizationId, lessonId) => {
     return axios.get(API_URL + `GetParticipents?organizationId=${organizationId}`)
 }
 
@@ -119,8 +119,8 @@ const TurnNotificationOnOff = async (request) => {
 const RemoveEmailId = async (emailId) => {
     return axios.delete(API_URL + `RemoveEmailId?userOrganizationEmailId=${emailId}`)
 }
-const SetPrimaryEmail=async(emailId)=>{
-    return axios.post(API_URL+`SetPrimaryEmail?emailId=${emailId}`)
+const SetPrimaryEmail = async (emailId) => {
+    return axios.post(API_URL + `SetPrimaryEmail?emailId=${emailId}`)
 }
 
 

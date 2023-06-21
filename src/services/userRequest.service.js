@@ -1,7 +1,7 @@
 import axios from 'axios';
 import address from '../env.js';
 
-const API_URL = `${address.API_URL}:${address.PORT}/api/UserRequest/`;
+const API_URL = `${address.API_URL}/api/UserRequest/`;
 
 
 const GetUserRequestsForApproval = async (orgId, offset = 0, limit = 10) => {

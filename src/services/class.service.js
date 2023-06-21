@@ -1,7 +1,7 @@
 import axios from 'axios';
 import address from '../env.js';
 
-const API_URL = `${address.API_URL}:${address.PORT}/api/Class/`;
+const API_URL = `${address.API_URL}/api/Class/`;
 
 const UpdateLessonGuid = async (lessonId) => {
     return axios.post(API_URL + `UpdateLessonGuid?lessonId=${lessonId}`)

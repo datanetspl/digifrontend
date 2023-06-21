@@ -1,7 +1,7 @@
 import axios from 'axios';
 import address from '../env.js';
 
-const API_URL = `${address.API_URL}:${address.PORT}/api/OrganizationRequest/`;
+const API_URL = `${address.API_URL}/api/OrganizationRequest/`;
 
 
 const addOrganizationRequest = async (request) => {

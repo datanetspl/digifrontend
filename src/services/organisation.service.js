@@ -1,10 +1,10 @@
 import axios from 'axios';
 import address from '../env.js';
 
-const API_URL = `${address.API_URL}:${address.PORT}/api/Organization/`;
+const API_URL = `${address.API_URL}/api/Organization/`;
 
 
-const getOrganizations = async (terms = "", offset = 0, limit = 10, userId = "",type="",country="") => {
+const getOrganizations = async (terms = "", offset = 0, limit = 10, userId = "", type = "", country = "") => {
     return axios.get(API_URL + `GetOrganization?terms=${terms}&offset=${offset}&limit=${limit}&userId=${userId}&type=${type}&country=${country}`)
 }
 
