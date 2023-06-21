@@ -6,11 +6,9 @@ import Logo from "../../../Navigation/Header"
 import CreateOrgRequest from 'components/createOrgRequest';
 
 function SignInBasic() {
-
-
   return (
     <>
-    <Logo position = "fixed"/>
+      <Logo position="fixed" />
       <MKBox
         position="absolute"
         top={0}
@@ -29,7 +27,7 @@ function SignInBasic() {
           backgroundRepeat: "no-repeat",
         }}
       />
-     <CreateOrgRequest status = {0}  />
+      <CreateOrgRequest status={0} />
     </>
   );
 }

@@ -40,7 +40,7 @@ export default function PermanentDrawerLeft() {
 
   const [selected, setSelected] = React.useState();
   const [loading, setLoading] = React.useState(false);
-  const [guestUser, setGuestUser] = React.useState(false);
+  const [guestUser, setGuestUser] = React.useState(true);
   const [openCreateModal, setOpenCreateModal] = React.useState(false);
   const [openShiftModal, setOpenShiftModal] = React.useState(false);
   const userId = localStorage.getItem("mainUserId") ? JSON.parse(localStorage.getItem("mainUserId")) : null;
@@ -77,7 +77,7 @@ export default function PermanentDrawerLeft() {
   const getDataFromApi = () => {
     setLoading(true)
     organisationService.getOrganizationbyUserId(userId).then((res) => {
-  console.log(res.data.result," new user Get sttaus")
+      console.log(res.data.result, " new user Get sttaus")
       res?.data?.result?.newUser && localStorage.setItem("user", JSON.stringify(res.data.result.newUser));
       var promiseforImages = res.data.result.organizations?.map((ele) => {
         return awsService.GetSignedUrl(ele.logo)
@@ -110,9 +110,9 @@ export default function PermanentDrawerLeft() {
         if (selectedData.length > 0) {
           localStorage.setItem("orgId", JSON.stringify(selectedData[0]?.organizationId));
           localStorage.setItem("orgName", JSON.stringify(selectedData[0]?.name));
-        
+
           let permission = user?.userOgranizations?.map(data => data.organizationId == selectedData[0]?.organizationId ? data.permissions?.map(ele => ele.permissionId) : null).filter((ele_) => ele_ != null)
-          if (permission == undefined){
+          if (permission == undefined) {
             permission = user?.permissions?.map(ele => ele.permissionId)
           }
           // debugger;

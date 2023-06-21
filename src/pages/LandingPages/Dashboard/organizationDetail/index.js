@@ -48,7 +48,7 @@ const OrganizationDetail = (props) => {
   const orgId = localStorage.getItem("orgId") ? JSON.parse(localStorage.getItem("orgId")) : 0;
 
   const handleChange = (event) => {
-   
+
     setErrors({ ...errors, topic: "" });
     setUserDetails({
       ...userDetails,
@@ -101,13 +101,13 @@ const OrganizationDetail = (props) => {
     }
     if (Object.keys(errors_).length === 0) {
       setShowCaptcha(true);
-      console.log(userDetails,"user")
-     
+      console.log(userDetails, "user")
+
     }
   };
 
   const onVerifyCaptcha = (token) => {
-    console.log(userDetails,"userDetails")
+    console.log(userDetails, "userDetails")
     if (token) {
       contactService.AddContactUsRequest(userDetails).then(() => {
         setSuccess(true);
@@ -115,7 +115,7 @@ const OrganizationDetail = (props) => {
         setTimeout(() => {
           setSuccess(false);
         }, 3000);
-        setUserDetails({...userDetails,"topic":"","message":""})
+        setUserDetails({ ...userDetails, "topic": "", "message": "" })
       });
     }
   };
@@ -156,35 +156,35 @@ const OrganizationDetail = (props) => {
                 Ask to join {state?.data?.name}
               </MKButton>
             )}
-           
-                <Grid display="flex">
-                {((state?.data.organizationId === orgId && permissions?.includes(30)) ||
-              user?.isPlatformAdmin) && (
-                    <MKButton
-                variant="gradient"
-                color="info"
-                style={{ marginLeft: 10 }}
-                onClick={() => setEditFormVisible(true)}
-              >
-                Edit
-              </MKButton>
-               )}
-                 {
-                 ((state?.data.organizationId === orgId && permissions?.includes(34)) ||
-              user?.isPlatformAdmin) && (
-              <MKButton
-                variant="gradient"
-                color="error"
-                style={{ marginLeft: 10 }}
-                onClick={() => setDeleteVisible(true)}
-              >
-                Delete Organization
-              </MKButton>
-                 )
-                 }
-                </Grid>
-              
-           
+
+            <Grid display="flex">
+              {((state?.data.organizationId === orgId && permissions?.includes(30)) ||
+                user?.isPlatformAdmin) && (
+                  <MKButton
+                    variant="gradient"
+                    color="info"
+                    style={{ marginLeft: 10 }}
+                    onClick={() => setEditFormVisible(true)}
+                  >
+                    Edit
+                  </MKButton>
+                )}
+              {
+                ((state?.data.organizationId === orgId && permissions?.includes(34)) ||
+                  user?.isPlatformAdmin) && (
+                  <MKButton
+                    variant="gradient"
+                    color="error"
+                    style={{ marginLeft: 10 }}
+                    onClick={() => setDeleteVisible(true)}
+                  >
+                    Delete Organization
+                  </MKButton>
+                )
+              }
+            </Grid>
+
+
           </Grid>
           <MKBox>
             <MKTypography variant={"h6"} mt={2}>
