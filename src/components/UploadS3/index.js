@@ -39,7 +39,7 @@ const UploadToS3WithNativeSdk = ({ setImage, setLoad, setFileName, fileType, tit
         setLoad(false);
         console.log(err, "error in updload file");
       });
-    
+
     //  setTimeout(()=>{
     //     Bucket.promisesOfS3Objects(key)
     //     .then((data) => {

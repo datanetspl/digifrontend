@@ -40,7 +40,7 @@ export default function PermanentDrawerLeft() {
 
   const [selected, setSelected] = React.useState();
   const [loading, setLoading] = React.useState(false);
-  const [guestUser, setGuestUser] = React.useState(true);
+  const [guestUser, setGuestUser] = React.useState(false);
   const [openCreateModal, setOpenCreateModal] = React.useState(false);
   const [openShiftModal, setOpenShiftModal] = React.useState(false);
   const userId = localStorage.getItem("mainUserId") ? JSON.parse(localStorage.getItem("mainUserId")) : null;
