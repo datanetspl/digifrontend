@@ -183,7 +183,7 @@ export default function KeepMountedModal({ visible, setVisible, orgData }) {
                                 onChange={handleChange}
                                 value={userDetails.organizationType}
                                 onBlur={(e) => { e.target.value == "" && setErrors({ ...errors, "organizationType": "Required" }) }}
-                                autoWidth
+                                autowidth
                                 label="Organization Type"
                                 required
                                 error={userDetails.organizationType != "" || !createClick ? false : true}
@@ -239,7 +239,7 @@ export default function KeepMountedModal({ visible, setVisible, orgData }) {
                                 id="demo-simple-select-autowidth"
                                 onChange={(e) => { setUserDetails({ ...userDetails, "country": e.target.value }); setErrors(prev => ({ ...prev, "country": "" })) }}
                                 onBlur={(e) => { e.target.value == "" && setErrors({ ...errors, "country": "Required" }) }}
-                                autoWidth
+                                autowidth
                                 label="Country"
 
                                 value={userDetails.country}

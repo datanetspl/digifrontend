@@ -394,7 +394,7 @@ const CourseType = () => {
                                                 value={selectedLessonList}
                                                 onChange={handleChange}
                                                 multiple={true}
-                                                autoWidth
+                                                autowidth
                                                 required
                                                 label="Related Lessons"
                                                 // defaultValue=""

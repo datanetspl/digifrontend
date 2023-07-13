@@ -327,7 +327,7 @@ const OrganizationDetail = (props) => {
                         e.target.value == "" && setErrors({ ...errors, topic: "Required" });
                       }}
                       value={userDetails.topic}
-                      autoWidth
+                      autowidth
                       label="Topic"
                       required
                       error={userDetails.topic != "" || !createClick ? false : true}

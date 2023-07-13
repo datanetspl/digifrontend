@@ -353,7 +353,7 @@ const AdminUserNameStudent = () => {
                                                 handleFilter(e.target.value, "" ,true, false)
                                             }}
                                             // onBlur = {handleFilter}
-                                            autoWidth
+                                            autowidth
                                             label="Select Parent"
                                             defaultValue=""
                                         >

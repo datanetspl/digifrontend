@@ -586,7 +586,7 @@ const UserManagement = () => {
                     labelId="demo-simple-select-autowidth-label"
                     id="demo-simple-select-autowidth"
                     onChange={handleDelType}
-                    autoWidth
+                    autowidth
                     label={"User Type"}
                     defaultValue=""
                   >

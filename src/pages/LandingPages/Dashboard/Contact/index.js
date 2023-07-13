@@ -270,7 +270,7 @@ function Contact() {
                       onBlur={(e) => {
                         e.target.value == "" && setErrors({ ...errors, topic: "Required" });
                       }}
-                      autoWidth
+                      autowidth
                       label="Topic"
                       required
                       error={userDetails.topic != "" || !createClick ? false : true}

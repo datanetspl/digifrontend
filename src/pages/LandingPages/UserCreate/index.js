@@ -391,7 +391,7 @@ function UserCreate() {
                             id="demo-simple-select-autowidth"
                             onChange={handleChange}
                             onBlur={(e) => { e.target.value == "" && setErrors({ ...errors, "organizationType": "Required" }) }}
-                            autoWidth
+                            autowidth
                             label="Organization Type"
                             required
                             error={userDetails.organizationType != "" || !createClick ? false : true}
@@ -446,7 +446,7 @@ function UserCreate() {
                             id="demo-simple-select-autowidth"
                             onChange={(e) => { setUserDetails({ ...userDetails, "countryCode": e.target.value }); setErrors(prev => ({ ...prev, "countryCode": "" })) }}
                             onBlur={(e) => { e.target.value == "" && setErrors({ ...errors, "countryCode": "Required" }) }}
-                            autoWidth
+                            autowidth
                             label="Country"
                             required
                             error={userDetails.countryCode != "" || !createClick ? false : true}

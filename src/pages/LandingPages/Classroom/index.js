@@ -1206,7 +1206,7 @@ const JitsiComponent = (props) => {
                     // value={selectedQuestion}
                     onChange={(e, value) => getQuestion(value)}
                     // disabled={selectedDateTime[params.id] == undefined || selectedDateTime[params.id] == ""}
-                    autoWidth
+                    autowidth
                     label="Questions"
                     // isOptionEqualToValue={(option, value) => option.id === value.id}
                     defaultValue=""
@@ -1254,7 +1254,7 @@ const JitsiComponent = (props) => {
                     className="change-size"
                     onChange={(e, value) => getActivity(value)}
                     // disabled={selectedDateTime[params.id] == undefined || selectedDateTime[params.id] == ""}
-                    autoWidth
+                    autowidth
                     label="Activity"
                     // isOptionEqualToValue={(option, value) => option.id === value.id}
                     defaultValue=""
@@ -1282,7 +1282,7 @@ const JitsiComponent = (props) => {
                     value={selectedResources}
                     onChange={(e, value) => getResources(value)}
                     // disabled={selectedDateTime[params.id] == undefined || selectedDateTime[params.id] == ""}
-                    autoWidth
+                    autowidth
                     label="Resources"
                     // isOptionEqualToValue={(option, value) => option.id === value.id}
                     defaultValue=""
@@ -1323,7 +1323,7 @@ const JitsiComponent = (props) => {
                     // value={selectedQuestion}
                     onChange={(e, value) => getScratch(value)}
                     // disabled={selectedDateTime[params.id] == undefined || selectedDateTime[params.id] == ""}
-                    autoWidth
+                    autowidth
                     label="Scratch Project"
                     // isOptionEqualToValue={(option, value) => option.id === value.id}
                     defaultValue=""
@@ -1383,7 +1383,7 @@ const JitsiComponent = (props) => {
                       //       })
                       //     : setErrorProperties({ ...errorProperties, Language: "" });
                       // }}
-                      autoWidth
+                      autowidth
                       required
                       label="History"
                     >
@@ -1854,7 +1854,7 @@ const JitsiComponent = (props) => {
                 // value={selectedQuestion}
                 onChange={(e, value) => getScratchUsers(value)}
                 // disabled={selectedDateTime[params.id] == undefined || selectedDateTime[params.id] == ""}
-                autoWidth
+                autowidth
                 label="Select Users"
                 // isOptionEqualToValue={(option, value) => option.id === value.id}
                 defaultValue=""

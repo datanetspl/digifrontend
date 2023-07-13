@@ -741,7 +741,7 @@ const Schedular = () => {
               value={selectedLocation[params.id] ?? null}
               onChange={(e, value) => getLocation(value, params)}
               // disabled={selectedDateTime[params.id] == undefined || selectedDateTime[params.id] == ""}
-              autoWidth
+              autowidth
               label="Location"
               isOptionEqualToValue={(option, value) => option.id === value.id}
               defaultValue=""
@@ -839,7 +839,7 @@ const Schedular = () => {
               value={selectedTeacher[params.id] ?? null}
               // disabled={selectedDateTime[params.id] == undefined || selectedDateTime[params.id] == ""}
               onChange={(e, value) => getTeacher(value, params)}
-              autoWidth
+              autowidth
               required
               isOptionEqualToValue={(option, value) => option.id === value.id}
               label="Lead Teacher"
@@ -903,7 +903,7 @@ const Schedular = () => {
               id="multiple-limit-tags"
               limitTags={1}
               onChange={(e, value) => getTeams(value, params)}
-              autoWidth
+              autowidth
               filterSelectedOptions
               isOptionEqualToValue={(option, value) => option.id === value.id}
               label="Additional Participants"
@@ -1056,7 +1056,7 @@ const Schedular = () => {
               //     }
               //   }
               // }
-              autoWidth
+              autowidth
             //  ListboxProps={{bg:"green"}}
               disableCloseOnSelect
               filterSelectedOptions
@@ -1680,7 +1680,7 @@ const Schedular = () => {
                     value={selectedCourseType}
                     disabled={selectedCourseScheduleId !== 0 ? true : false}
                     onChange={handleChange}
-                    autoWidth
+                    autowidth
                     label="Select Course Type"
                   >
                     {loader_ ? (
@@ -1868,7 +1868,7 @@ const Schedular = () => {
             limitTags={1}
             onChange={(e, value) => getTeamList(e.target, value)}
             // onChange={(e, value) => getTeams(value, params)}
-            autoWidth
+            autowidth
             filterSelectedOptions
             isOptionEqualToValue={(option, value) => option.id === value.id}
             label="Additional Participants"
@@ -1948,7 +1948,7 @@ const Schedular = () => {
               limitTags={1}
               onChange={(e, value) => getTeamList(e.target, value)}
               // onChange={(e, value) => getTeams(value, params)}
-              autoWidth
+              autowidth
               filterSelectedOptions
               isOptionEqualToValue={(option, value) => option.id === value.id}
               label="Additional Participants"

@@ -1017,7 +1017,7 @@ const CourseListing = () => {
                                       })
                                       : setErrorProperties({ ...errorProperties, Language: "" });
                                   }}
-                                  autoWidth
+                                  autowidth
                                   required
                                   label="Languages"
                                 >

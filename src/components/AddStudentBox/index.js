@@ -299,7 +299,7 @@ const AddStudentBox = (props) => {
                                             value={props.type == 0 ? selectedParent : selectedParentList}
                                             onChange={handleChange}
                                             multiple={props.type == 0 ? false : true}
-                                            autoWidth
+                                            autowidth
                                             
                                             disabled={props.type==0 &&disabled}
                                             label={props.type == 0 ? "Link to Parent" : "Link to organizations"}

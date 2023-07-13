@@ -89,7 +89,7 @@ const InnerBox = ({ setResponse, setVisible }) => {
                             error: false,
                             message: ""
                         })
-                        setVisible(false)
+                        //setVisible(false)
                     }, 5000);
                 }
             }).catch((err) => {

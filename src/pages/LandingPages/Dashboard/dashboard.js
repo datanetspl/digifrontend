@@ -248,7 +248,7 @@ const Dashboardd = () => {
                                 id="demo-simple-select-autowidth"
                                 onChange={(e)=>setTypeOrg(e.target.value)}
                                 // onBlur={(e) => { e.target.value == "" && setErrors({ ...errors, "organizationType": "Required" }) }}
-                                autoWidth
+                                autowidth
                                 
                                 label="Organization Type"
                                 // error={orgDetails.typeOfOrganization != "" || !createClick ? false : true}
@@ -276,7 +276,7 @@ const Dashboardd = () => {
                                 id="demo-simple-select-autowidth"
                                 onChange={(e) =>  setCountryOrg(e.target.value) }
                 
-                                autoWidth
+                                autowidth
                                 label="Country"
                                
                             // error={orgrDetails.countryCode != "" || !createClick ? false : true}

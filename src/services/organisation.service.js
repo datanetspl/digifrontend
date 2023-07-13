@@ -19,6 +19,7 @@ const activateOrganization = async (orgId, userID) => {
     return axios.get(API_URL + `ActivateOrganization?orgId=${orgId}&userID=${userID}`)
 }
 const createOrganization = async (request) => {
+    console.log(API_URL + `CreateOrganization`, request);
     return axios.post(API_URL + `CreateOrganization`, request)
 }
 const getOrganizationRequests = async (offset = 0, limit = 10) => {

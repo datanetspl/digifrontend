@@ -117,7 +117,7 @@ export default function KeepMountedModal({ visible, setVisible, user }) {
                         value={selectOrg}
                         // disabled={selectedDateTime[params.id] == undefined || selectedDateTime[params.id] == ""}
                         onChange={(e, value) => handleOrgValue(value)}
-                        autoWidth
+                        autowidth
 
                         // isOptionEqualToValue={(option, value) => option.id === value.id}
                         label='End Point'
